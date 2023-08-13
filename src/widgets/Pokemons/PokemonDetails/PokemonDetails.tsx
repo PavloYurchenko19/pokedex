@@ -18,6 +18,7 @@ export const PokemonDetails = () => {
 
     if (isLoading) return <Loader isLoading/>
     if (!pokemon) return <></>
+
     return (
         <PokemonDetailsContainer color={typeColor[pokemon.type]}>
             <PokemonImage src={pokemon.img} alt={`Pokemon ${pokemon.name}`} />

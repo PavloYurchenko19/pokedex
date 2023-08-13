@@ -13,6 +13,10 @@ export const PokemonDetailsContainer = styled.div<PokemonDetailsContainerProps>`
   max-width: 250px;
   font-size: 16px;
   transition: all .7s linear;
+
+  @media (max-width: 768px) {
+    position: static;
+  }
 `;
 
 export const PokemonImage = styled.img`
@@ -24,6 +28,7 @@ export const PokemonImage = styled.img`
 export const PokemonType = styled.span`
   margin-top: 10px;
 `;
+
 export const PokemonName = styled.span`
   font-size: 20px;
 `;
@@ -33,7 +38,6 @@ export const PokemonStatContainer = styled.div`
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  
 `;
 
 export const PokemonStat = styled.div`

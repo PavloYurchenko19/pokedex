@@ -2,19 +2,22 @@ import styled from "styled-components";
 import {CardStyledProps} from "../model/model.ts";
 
 export const ContainerCard = styled.div`
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   
+  @media (max-width: 425px) {
+    width: 90%;
+  }
 `;
 
 
 export const Card = styled.div<CardStyledProps>`
   display: flex;
   flex-direction: column;
-  flex: 0 0 30%;
+  flex: 1 0 30%;
   min-width: 150px;
   padding: 10px 15px;
   box-shadow: 0 8px 22px white;
@@ -23,6 +26,10 @@ export const Card = styled.div<CardStyledProps>`
   transition: all .5s ease;
   cursor: pointer;
 
+  @media (max-width: 425px) {
+    flex: 0 0 100%;
+  }
+  
   img {
     display: block;
     width: 100%;
@@ -30,6 +37,7 @@ export const Card = styled.div<CardStyledProps>`
     position: relative;
     margin: 20px auto;
   }
+  
   &:hover{
    scale: 1.05;
     box-shadow: 0 8px 22px ${props => props.color ?? 'white'};
@@ -62,7 +70,7 @@ export const Types = styled.div`
 
 export const LoadMoreButton = styled.button`
   display: inline-block;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 10px 20px;
   border: none;
   background: radial-gradient(#e03131, #804831);
@@ -88,6 +96,10 @@ export const PokemonsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 
 export const ImagePokemon = styled.img`
@@ -97,6 +109,8 @@ export const ImagePokemon = styled.img`
 export const MainWrapper = styled.div`
   display: flex;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `
-
-
