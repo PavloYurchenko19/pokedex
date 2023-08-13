@@ -94,3 +94,9 @@ export const ImagePokemon = styled.img`
   width: 120px;
   height: 120px;
 `
+export const MainWrapper = styled.div`
+  display: flex;
+  gap: 20px;
+`
+
+

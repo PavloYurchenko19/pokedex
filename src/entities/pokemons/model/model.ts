@@ -31,6 +31,9 @@ export interface Berry {
         }
     },
     types: PokemonType[]
+    stats: PokemonStat[]
+    weight: number
+    moves: []
 }
 
 export interface PokemonCard {
@@ -45,7 +48,7 @@ export interface BerryFlavorMap {
 export interface PokemonType {
     slot: number;
     type: {
-        name: colorsType;
+        name: ColorsType;
         url: string;
     };
 }
@@ -54,7 +57,7 @@ export interface CardStyledProps {
     color: string
 }
 
-export type colorsType = 'bug' | 'dragon' | 'electric' | 'fairy' | 'fighting' | 'fire' | 'flying' | 'grass' | 'ground' | 'ghost' | 'ice' | 'normal' | 'poison' | 'psychic' | 'rock' | 'water';
+export type ColorsType = 'bug' | 'dragon' | 'electric' | 'fairy' | 'fighting' | 'fire' | 'flying' | 'grass' | 'ground' | 'ghost' | 'ice' | 'normal' | 'poison' | 'psychic' | 'rock' | 'water';
 
 
 export interface PokemonService {
@@ -64,8 +67,39 @@ export interface PokemonService {
 
 export interface PokemonLoadMoreProps {
     onClick: ()=> void
+    disabled: boolean
 }
 
 export interface PokemonCardI {
+    pokemon: Berry
+    onClick:(name: string, pokemon: Berry) => void
+}
+
+export interface PokemonStat {
+    base_stat: number;
+    effort: number;
+    stat: {
+        name: string;
+        url: string;
+    };
+}
+
+
+export interface PokemonDetails {
+    id: number
+    stats: Array<{ name:string, value: number }>
+    type: ColorsType
+    weight: number
+    moves: number
+    img: string
+    name: string
+}
+
+export interface PokemonDetailsContainerProps {
+    color: string
+}
+
+export interface UseGetAllDetailsByNameProps {
+    name?: string
     pokemon: Berry
 }

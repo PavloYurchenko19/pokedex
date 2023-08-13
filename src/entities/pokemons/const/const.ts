@@ -1,6 +1,6 @@
-import {colorsType} from "../model/model.ts";
+import {ColorsType} from "../model/model.ts";
 
-export const typeColor: Record<colorsType, string> = {
+export const typeColor: Record<ColorsType, string> = {
     bug: "#26de81",
     dragon: "#ffeaa7",
     electric: "#fed330",

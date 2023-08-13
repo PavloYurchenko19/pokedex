@@ -13,9 +13,9 @@ export const LoaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
+  height: calc(100vh - 140px);
+  position: fixed;
+  background: transparent;
 `;
 
 const spin = keyframes`
@@ -41,9 +41,9 @@ export const Loader = styled.div`
     content: '';
     position: absolute;
     height: 8px;
-    width: 100px;
+    width: 85px;
     background: black;
-    top: 42px;
+    top: 50%;
     transform: translateY(-50%);
   }
 
@@ -54,8 +54,8 @@ export const Loader = styled.div`
     width: 38px;
     border-radius: 50%;
     background: white;
-    top: 42px;
-    left: 40px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: inset 0 0 0 8px black, inset 0 0 0 10px white, inset 0 0 0 12px black;
   }
