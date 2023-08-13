@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {CardStyledProps} from "@entities/pokemons/model/model.ts";
+import {CardStyledProps} from "../model/model.ts";
 
 export const ContainerCard = styled.div`
   width: 100%;

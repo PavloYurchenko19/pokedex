@@ -1,5 +1,5 @@
 import styled, {keyframes} from "styled-components";
-import {ScrollToTopButtonProps} from "@shared/model/model.ts";
+import {ScrollToTopButtonProps} from "../model/model.ts";
 
 export const HeaderMain = styled.header`
   border: 1px solid silver;

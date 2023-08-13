@@ -1,6 +1,7 @@
 import {useCallback, useEffect, useState} from 'react';
-import {pokemonService} from "@entities/pokemons/api/pokemonService.ts";
-import {Berry} from "@entities/pokemons/model/model.ts";
+import {pokemonService} from "../api/pokemonService.ts";
+import {Berry} from "../model/model.ts";
+
 
 export const useGetAllPokemons = () => {
     const [offset, setOffset] = useState<number>(0)

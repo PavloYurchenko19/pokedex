@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {ScrollToTopButton} from "@shared/style/shared.styled.ts";
+import {ScrollToTopButton} from "../style/shared.styled.ts";
 
 export const GoToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
