@@ -1,15 +1,8 @@
+
 export interface NamedAPIResource {
     name: string;
     url: string;
 }
-
-export interface NamedAPIResourceList {
-    count: number;
-    next: string | null;
-    previous: string | null;
-    results: NamedAPIResource[];
-}
-
 export interface Berry {
     id: number;
     name: string;
@@ -48,7 +41,7 @@ export interface BerryFlavorMap {
 export interface PokemonType {
     slot: number;
     type: {
-        name: ColorsType;
+        name: PokemonKindType;
         url: string;
     };
 }
@@ -58,12 +51,7 @@ export interface CardStyledProps {
 }
 
 export type ColorsType = 'bug' | 'dragon' | 'electric' | 'fairy' | 'fighting' | 'fire' | 'flying' | 'grass' | 'ground' | 'ghost' | 'ice' | 'normal' | 'poison' | 'psychic' | 'rock' | 'water';
-
-
-export interface PokemonService {
-    getAllPokemon: (offset: number) => Promise<NamedAPIResourceList>;
-    getPokemon: (name: string) => Promise<Berry>;
-}
+export type PokemonKindType = ColorsType
 
 export interface PokemonLoadMoreProps {
     onClick: ()=> void
@@ -102,4 +90,8 @@ export interface PokemonDetailsContainerProps {
 export interface UseGetAllDetailsByNameProps {
     name?: string
     pokemon: Berry
+}
+
+export interface FilterPokemonProps {
+    onFilterChange: (event: PokemonKindType) => void
 }

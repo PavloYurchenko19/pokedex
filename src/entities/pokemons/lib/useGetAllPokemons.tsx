@@ -13,7 +13,6 @@ export const useGetAllPokemons = () => {
             stIsLoading(true)
             const data = await pokemonService.getAllPokemon(offset)
 
-
             const pokemonPromise =
                 data.results
                     .map(async (value)=>

@@ -3,7 +3,6 @@ import {MainWrapper, PokemonsWrapper} from "../../entities/pokemons/style/Pokemo
 import {AllPokemons} from "../../features/pokemons";
 import {PokemonDetails} from "./PokemonDetails/PokemonDetails.tsx";
 
-
 export const Pokemons = () => {
     return (
         <>
@@ -18,7 +17,6 @@ export const Pokemons = () => {
             <GoToTopButton/>
            </MainWrapper>
         </>
-
     );
 };
 

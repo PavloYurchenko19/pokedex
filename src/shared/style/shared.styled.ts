@@ -8,6 +8,11 @@ export const HeaderMain = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  
+  
 `
 export const LoaderContainer = styled.div`
   display: flex;
