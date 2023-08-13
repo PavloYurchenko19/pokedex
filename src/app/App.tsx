@@ -1,11 +1,11 @@
 import {Route, Routes} from "react-router-dom";
-import {Pokemons} from "../pages/Pokemons";
+import {PokemonsPage} from "@pages/PokemonsPage";
 
 function App() {
 
   return (
           <Routes>
-              <Route path="/" element={<Pokemons/>} />
+              <Route path="/" element={<PokemonsPage/>} />
           </Routes>
   )
 }

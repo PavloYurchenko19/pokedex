@@ -1,10 +1,8 @@
-import React from 'react';
 import {HeaderMain} from "../style/shared.styled.ts";
-interface HeaderPropsI {
-    title: string
-}
+import React from "react";
+import {HeaderPropsI} from "@shared/model/model.ts";
 
-export const Header = ({title}) => {
+export const Header:React.FC<HeaderPropsI> = ({title}) => {
     return (
         <HeaderMain>
             <h1>{title}</h1>

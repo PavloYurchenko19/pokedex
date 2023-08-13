@@ -347,3 +347,9 @@ template {
 [hidden] {
     display: none;
 }
+*{
+    background: black;
+    color: white;
+    box-sizing: border-box;
+
+}
