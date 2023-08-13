@@ -1,27 +1,34 @@
-# React + TypeScript + Vite
+# Vite and React Project Starter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Vite and React Project Starter! This template provides you with a solid foundation to quickly set up a modern web development environment using Vite and React. Vite is known for its speed and ease of use, while React is a powerful library for building dynamic user interfaces.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow these steps to get your project up and running.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Make sure you have the following software installed on your machine:
 
-- Configure the top-level `parserOptions` property like this:
+- Node.js (v14 or later)
+- npm (Node Package Manager)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Installation
+
+1. Clone this repository to your local machine using the following command:
+
+```bash
+git clone git@github.com:PavloYurchenko19/pokedex.git
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+```bash
+cd ./pokedex
+```
+3. Install the project dependencies by running:
+```bash
+npm instal
+```
+4. After the installation is complete, start the development server with:
+```bash
+npm run dev
+```
