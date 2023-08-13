@@ -5,7 +5,7 @@ export function App() {
 
   return (
       <Routes>
-          <Route path="/" element={<PokemonsPage/>} />
+          <Route path="dist/" element={<PokemonsPage/>} />
           <Route path="dist/:name" element={<PokemonsPage/>} />
       </Routes>
   )
