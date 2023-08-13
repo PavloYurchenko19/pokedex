@@ -13,10 +13,15 @@ export const useGetAllPokemons = () => {
             stIsLoading(true)
             const data = await pokemonService.getAllPokemon(offset)
 
-            for (const value of data.results) {
-                const pokemon = await pokemonService.getPokemon(value.name)
-                setPokemons((prevState)=>([...prevState, pokemon]))
-            }
+
+            const pokemonPromise =
+                data.results
+                    .map(async (value)=>
+                        await pokemonService.getPokemon(value.name))
+
+            const fetchedPokemons = await Promise.all(pokemonPromise)
+            setPokemons((prevState)=>([...prevState, ...fetchedPokemons]))
+
         }catch (e) {
             console.log(e)
         }finally {
