@@ -19,7 +19,7 @@ export const AllPokemons = () => {
     },[filter,pokemons])
 
     const chosePokemon = useCallback((name: string, pokemon: Berry)=>{
-        navigate(`/${name}`, {state:{pokemon}})
+        navigate(`/dist/${name}`, {state:{pokemon}})
     },[])
 
     const onFilterChange = useCallback((event: PokemonKindType)=>{
