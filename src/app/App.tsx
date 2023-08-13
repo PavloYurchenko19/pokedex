@@ -1,7 +1,7 @@
 import {Route, Routes} from "react-router-dom";
-import {PokemonsPage} from "@pages/PokemonsPage";
+import {PokemonsPage} from "../pages/PokemonsPage";
 
-function App() {
+export function App() {
 
   return (
           <Routes>
@@ -10,4 +10,3 @@ function App() {
   )
 }
 
-export default App

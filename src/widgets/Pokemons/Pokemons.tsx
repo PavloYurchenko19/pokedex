@@ -1,6 +1,7 @@
-import {GoToTopButton, Header} from "@shared//ui";
-import {PokemonsWrapper} from "@entities/pokemons/style/Pokemons.styled.ts";
-import {AllPokemons} from "@features/pokemons";
+import {GoToTopButton, Header} from "../../shared/ui";
+import {PokemonsWrapper} from "../../entities/pokemons/style/Pokemons.styled.ts";
+import {AllPokemons} from "../../features/pokemons";
+
 
 export const Pokemons = () => {
     return (
