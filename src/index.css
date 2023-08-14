@@ -1,7 +1,0 @@
-@import "app/style/normalize.css";
-@import "app/style/fonts.css";
-
-h1{
-    font-family: Handjet, serif;
-    letter-spacing: 5px;
-}
